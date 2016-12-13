@@ -1,0 +1,20 @@
+.bottom-thing {
+  background-color: #CC3333;
+  color: white;
+  margin-top: -200px;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  div {
+    flex-basis: 500px;
+    margin-left: -500px;
+    h1 {
+      font-size: 3em;
+    }
+  }
+  img {
+    transform:rotate(-15deg);
+  }
+}
