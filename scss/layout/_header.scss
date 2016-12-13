@@ -21,7 +21,7 @@ ul {
 .navbar {
   display: flex;
   justify-content: space-between;
-  // @media (max-width: 839px) {
-  //
-  // }
+  li:hover {
+    color: peachpuff;
+  }
 }
