@@ -28,7 +28,7 @@ h1 {
     text-shadow: 10px 10px 20px #40bcc0;
     transition: 2.4s; }
     .content h1:hover {
-      margin-right: 940px; }
+      margin-right: 63%; }
   .content > * {
     margin-right: 20px; }
   .content p {
@@ -50,7 +50,35 @@ h1 {
 
 footer {
   background-color: black;
-  height: 500px; }
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 0 200px; }
+  footer ul {
+    padding-left: 0; }
+  footer .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    footer .footer ul:last-child {
+      display: flex;
+      flex-basis: 400px;
+      justify-content: flex-end;
+      flex-wrap: wrap; }
+      footer .footer ul:last-child li {
+        margin-left: 20px; }
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    footer ul:nth-child(4) {
+      flex-direction: row; }
+    footer ul li {
+      list-style: none;
+      margin: 0; }
+
+.footer2 {
+  min-width: 460px; }
 
 .navbar {
   display: flex;
@@ -83,6 +111,8 @@ footer {
     .topbar ul li {
       padding: 0px 20px;
       font-weight: bold; }
+      .topbar ul li a:hover {
+        border-bottom: 2px solid black; }
   .topbar input {
     margin-right: 15px; }
   .topbar img {

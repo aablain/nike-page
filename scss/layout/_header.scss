@@ -37,6 +37,9 @@
     li {
       padding: 0px 20px;
       font-weight: bold;
+      a:hover {
+        border-bottom: 2px solid black;
+      }
     }
   }
   input {
