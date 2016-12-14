@@ -1,8 +1,47 @@
 .content {
+  background-image: url(../img/shoe.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-basis: 900px;
   display: flex;
-  justify-content: space-between;
-  flex-flow: wrap;
-  img {
-    margin-top: 25px;
+  flex-direction: column;
+  // flex-wrap: wrap-reverse;
+  align-items: flex-end;
+  justify-content: center;
+  color: white;
+  h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bolder;
+    font-size: 3em;
+    text-shadow: 10px 10px 20px rgb(64, 188, 192);
+    transition: 2.4s;
+    &:hover {
+      margin-right: 940px;
+    }
+  }
+  & > * {
+    margin-right: 20px;
+  }
+  p {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .bars {
+    display: flex;
+    span {
+      background-color: black;
+      color: white;
+      border-radius: 3px;
+      &:hover {
+        color: rgb(64, 188, 192);
+      }
+    }
+    span:nth-of-type(1) {
+      padding: 10px 50px;
+    }
+    span:nth-of-type(2) {
+      padding: 10px 15px;
+      margin-left: 10px;
+    }
   }
 }

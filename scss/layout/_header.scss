@@ -1,31 +1,49 @@
-
-ul {
-  display: flex;
-  flex-basis: 500px;
-  // background-color: red;
-  justify-content: space-between;
-  li {
-    color: white;
-    list-style: none;
-    align-self: center;
-  }
-}
-
-.register {
-  background-color: $color-red;
-  border-radius: 20px;
-  padding: 10px;
-  width: 55px;
-}
-
 .navbar {
   display: flex;
   justify-content: space-between;
-  li:hover {
-    color: peachpuff;
+  border-bottom: 1px solid $color-grey;
+  align-items: center;
+  ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    li {
+      list-style: none;
+      color: $navbar-color;
+      padding: 5px;
+    }
+    li:nth-of-type(3) {
+      padding: 5px 20px;
+    }
+  }
+  ul:nth-of-type(1) {
+    li {
+      padding: 10px 25px;
+      border-right: 1px solid $color-grey;
+      &:hover {
+        background: linear-gradient(to top, $color-grey, white 50%);
+      }
+    }
   }
 }
 
-i {
-  color: #5C5C5C;
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  ul {
+    list-style: none;
+    display: flex;
+    li {
+      padding: 0px 20px;
+      font-weight: bold;
+    }
+  }
+  input {
+    margin-right: 15px;
+  }
+  img {
+    max-width: 60px;
+    margin-left: 15px;
+  }
 }
