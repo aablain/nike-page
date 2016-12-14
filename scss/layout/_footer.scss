@@ -35,6 +35,40 @@ footer {
   }
 }
 
+.footer {
+  ul:not(:first-child) {
+    li:not(:first-child) {
+      color: $navbar-color;
+    }
+  }
+  ul:last-child {
+    li {
+      color: $navbar-color;
+    }
+  }
+}
+
+hr {
+  width: 100%;
+}
+
+.footer, .footer2, hr {
+  min-width: 469px;
+}
+
 .footer2 {
   min-width: 460px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  ul {
+    display: flex;
+    flex-direction: row;
+    li {
+      margin-left: 5px;
+    }
+  }
+  & > *:not(:first-child), div > *:not(:first-child) {
+    color: $navbar-color;
+  }
 }

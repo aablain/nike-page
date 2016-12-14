@@ -77,8 +77,29 @@ footer {
       list-style: none;
       margin: 0; }
 
+.footer ul:not(:first-child) li:not(:first-child) {
+  color: gray; }
+.footer ul:last-child li {
+  color: gray; }
+
+hr {
+  width: 100%; }
+
+.footer, .footer2, hr {
+  min-width: 469px; }
+
 .footer2 {
-  min-width: 460px; }
+  min-width: 460px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between; }
+  .footer2 ul {
+    display: flex;
+    flex-direction: row; }
+    .footer2 ul li {
+      margin-left: 5px; }
+  .footer2 > *:not(:first-child), .footer2 div > *:not(:first-child) {
+    color: gray; }
 
 .navbar {
   display: flex;
